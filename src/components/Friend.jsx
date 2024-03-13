@@ -11,7 +11,7 @@ export const Friend = ({jumlah}) => {
     <Swiper
      modules={[Scrollbar]}
 spaceBetween={30}
-className='h-[120px] w-[480px] md:w-[200px] lg:w-[300px] xl:w-[450px] mt-4 pb-5 '
+className='h-[120px] w-[400px] md:w-[200px] lg:w-[300px] xl:w-[450px] mt-4 pb-5 '
 // style={{cursor:'grab'}}
 scrollbar={{ draggable: true }}
 slidesPerView={jumlah}
