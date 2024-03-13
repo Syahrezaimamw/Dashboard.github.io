@@ -9,8 +9,8 @@ export const Task = () => {
         <div className='w-full'>
             <div className='w-full py-5 rounded-3xl px-7 h-xl bg-abuu'>
                 <div className=' sm:w-[80%] md:w-full  lg:w-[80%]  w-full  '>
-                    <h1 className='text-2xl font-medium'>{data.name}</h1>
-                    <p className='py-3 pb-4 text-gray-600 text-[15px] text-justify '>{data.deskripsi}</p>
+                    <h1 className='text-2xl font-medium'>Hi Syahreza</h1>
+                    <p className='py-3 pb-4 text-gray-600 text-[15px] text-justify '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, nulla exercitationem at quis facilis accusamus enim dicta id laudantium? Obcaecati delectus inventore corporis blanditiis dolorem ex, nihil maiores vitae hic.</p>
                     <Button>View Details </Button>
                 </div>
             </div>
