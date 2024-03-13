@@ -4,7 +4,7 @@ import { Card } from '../components/Card'
 
 export const Task = () => {
     const data=JSON.parse(localStorage.getItem('changeDahsboardProfile'))
-    console.log(data)
+    // console.log(data)
     return (
         <div className='w-full'>
             <div className='w-full py-5 rounded-3xl px-7 h-xl bg-abuu'>
