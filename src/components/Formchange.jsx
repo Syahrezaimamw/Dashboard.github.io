@@ -4,8 +4,7 @@ import { Appcontxt } from '../contex/Ctx'
 const Formchange = () => {
     const data=useContext(Appcontxt)
     const ubah=data.ubah
-    console.log(ubah)
-    console.log(data)
+
   return (
     <form className="w-full" onSubmit={(e)=>{
         e.preventDefault()
@@ -48,8 +47,8 @@ const Formchange = () => {
       </label>
     </div>
   
-  <div className='flex items-end justify-between w-full'>
-    <p className='text-sm font-medium text-gray-800'>Change Note </p>
+  <div className='flex items-end justify-between w-full xl:justify-between md:justify-end'>
+    <p className='text-sm font-medium text-gray-800 md:hidden lg:block'>Change Note </p>
 
     <Button
     >

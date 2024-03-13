@@ -41,13 +41,13 @@ const Layout = () => {
             <div className='flex  md:px-3 xl:px-6 xl:max-w-[1580px]'>
 
               {/* <div></div> */}
-              <div className='w-full mt-3 md:pt-0 ps-3 md:ps-9 pe-3 md:pe-0'>
+              <div className='w-full mt-3 md:pt-0 ps-3 md:ps-3 lg:ps-7 xl:ps-9 pe-3 md:pe-0'>
                 <Profile />
                 <div className='flex flex-col mt-8 md:flex-row '>
-                  <div className=' w-full pe-0 md:w-[60%] md:pe-8'>
+                  <div className=' w-full pe-0 md:w-[60%] md:pe-5'>
                     <Task></Task>
                   </div>
-                  <div className=' w-full pe-3 md:w-[40%] mt-10 md:mt-0'>
+                  <div className=' w-full md:pe-3 md:w-[40%] pb-5 md:pb-0 mt-10 md:mt-0'>
                     <Acara />
                   </div>
                 </div>
