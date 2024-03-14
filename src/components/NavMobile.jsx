@@ -8,7 +8,6 @@ import { Appcontxt } from '../contex/Ctx';
 import App from '../App';
 export const NavMobile = () => {
     const data=useContext(Appcontxt)
-    console.log(data)
   return (
     <div className='flex flex-col items-center justify-between w-full pt-3 sm:hidden '>
         <AlertProfile/>

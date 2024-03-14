@@ -4,6 +4,8 @@ import './index.css';
 import './font.css'
 import { Contex } from './contex/Ctx';
 import App from './App';
+import 'react-loading-skeleton/dist/skeleton.css'
+
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -8,8 +8,6 @@ import { Appcontxt } from '../contex/Ctx';
 import App from '../App';
 const Profile = () => {
     const data=useContext(Appcontxt)
-    console.log(data.dispatch)
-    console.log(data)
     
     return (
         <>

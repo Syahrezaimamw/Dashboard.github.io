@@ -5,7 +5,7 @@ import App from '../App';
 import { Appcontxt } from '../contex/Ctx';
 export const AlertProfile = () => {
     const {hamburger}=useContext(Appcontxt)
-    console.log(hamburger)
+    // console.log(hamburger)
     
   return (
          

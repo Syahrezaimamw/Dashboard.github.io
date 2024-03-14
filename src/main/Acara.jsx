@@ -14,32 +14,40 @@ export const Acara = () => {
                 <CardAcara title='Claps This Week' total="1.5k" ic={<FaRegHand />} color='#B9BFF8' />
                 <CardAcara title='New Followers This Week' total="100" ic={<FaRegUser />} color='rgb(230,230,230)' />
             </div>
-            <div className='mt-6 px-7'>
+            <div className='flex flex-col mt-6 px-7'>
                 <div className='flex justify-between w-full '>
                     <h1 className='text-lg font-medium'>Friend</h1>
                     <p className='text-[14px] text-slate-600'>View all</p>
                 </div>
 
-               
+               <div className='flex justify-center w-full'>
+                
+                {/* md */}
                 <div className='justify-center hidden w-full mt-3 md:flex lg:hidden md:w-full'>
 
                     <Friend jumlah={2}/>
                 </div>
+
+                {/* xl */}
                 <div className='hidden justify-center w-[300px] mt-3 md:hidden xl:flex md:w-full'>
 
                     <Friend jumlah={4}/>
                 </div>
-                <div className='flex justify-center w-[320px] mt-3 md:hidden  md:w-full'>
+                
+                {/* default */}
+                <div className='flex justify-center w-[310px]  mt-3 md:hidden  md:w-full'>
 
                     <Friend jumlah={3}/>
                 </div>
+              
                
-                
+               {/* lg  */}
                 <div className='justify-center hidden w-full mt-3 lg:flex xl:hidden md:w-full'>
 
                     <Friend jumlah={3}/>
                 </div>
    
+               </div>
              <div className='p-6 mt-10 bg-white rounded-3xl h-[225px]'>
                 <Notes/>
             </div>

@@ -1,17 +1,10 @@
 import React from 'react'
 import { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-// import './styles.css'
 import './corousel.css'
-// import required modules
 import Formchange from './Formchange';
-import { Pagination } from 'swiper/modules';
 export const Notes = () => {
   return (
     <div className=' h-[95%] yayac' >
