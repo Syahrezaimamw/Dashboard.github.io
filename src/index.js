@@ -4,14 +4,29 @@ import './index.css';
 import './font.css'
 import { Contex } from './contex/Ctx';
 import App from './App';
+import { DetailProject } from './DetailProject';
 import 'react-loading-skeleton/dist/skeleton.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
+const router = createBrowserRouter([
+  {
+    path: "/Dashboard.github.io/",
+    element:<App/>,
+  },
+  {
+    path: "/Dashboard.github.io/detail",
+    element:<DetailProject/>,
+  },
+]);
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <RouterProvider router={router} />
   </React.StrictMode>
 );
 

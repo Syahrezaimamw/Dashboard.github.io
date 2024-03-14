@@ -7,7 +7,7 @@ import './corousel.css'
 import Formchange from './Formchange';
 export const Notes = () => {
   return (
-    <div className=' h-[95%] yayac' >
+    <div className=' h-[100%]  yayac ' >
          <Swiper
         direction={'vertical'}
         pagination={{
@@ -19,7 +19,7 @@ export const Notes = () => {
         className="mySwiper"
       >
         <SwiperSlide className=' w-100 cursor-grab'>
-            <div className='w-full'>
+            <div className='w-full mt-3'>
 
             <Formchange/>
             </div>

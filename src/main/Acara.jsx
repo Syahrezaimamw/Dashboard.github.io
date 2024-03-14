@@ -14,8 +14,8 @@ export const Acara = () => {
                 <CardAcara title='Claps This Week' total="1.5k" ic={<FaRegHand />} color='#B9BFF8' />
                 <CardAcara title='New Followers This Week' total="100" ic={<FaRegUser />} color='rgb(230,230,230)' />
             </div>
-            <div className='flex flex-col mt-6 px-7'>
-                <div className='flex justify-between w-full '>
+            <div className='flex flex-col px-3 mt-6 sm:px-7'>
+                <div className='flex justify-between w-full px-4'>
                     <h1 className='text-lg font-medium'>Friend</h1>
                     <p className='text-[14px] text-slate-600'>View all</p>
                 </div>
@@ -48,7 +48,7 @@ export const Acara = () => {
                 </div>
    
                </div>
-             <div className='p-6 mt-10 bg-white rounded-3xl h-[225px]'>
+             <div className='p-6 mt-10 bg-white rounded-3xl h-[255px] '>
                 <Notes/>
             </div>
             </div>

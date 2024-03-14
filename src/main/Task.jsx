@@ -4,6 +4,7 @@ import { Card } from '../components/Card'
 import { getApii, postData } from '../service/api'
 import Select from "react-select"
 import { CardSkeleton } from '../components/CardSkeleton'
+import { Link } from 'react-router-dom'
 export const Task = () => {
     const colorStyles={
         control:(styles,state)=>({...styles,zIndex:99,backgroundColor:'rgb(245,245,245)',border:'0px',borderBottom:'2px solid #d1d5db',borderRadius:'none'
@@ -16,7 +17,7 @@ export const Task = () => {
             return{
                 ...styles
                 ,backgroundColor:'black',
-                color:'#fff',
+                color:'white',
                 padding:'0px'
             }
         },
@@ -41,18 +42,18 @@ export const Task = () => {
             label: 'javascript',
             value: ' OUTPUT BERUPA ACCOUNT, ',
         },
+        // {
+        //     label: 'tailwind', 
+        //     value: 'tailwind',
+        // },
         {
-            label: 'tailwind', 
-            value: 'tailwind',
+            label: 'html',
+            value: ' html',
         },
-        // {
-        //     label: 'html',
-        //     value: ' html',
-        // },
-        // {
-        //     label: 'css',
-        //     value: 'css ',
-        // },
+        {
+            label: 'css',
+            value: 'css ',
+        },
         // {
         //     label: 'bootstrap',
         //     value: ' bootstrap',
@@ -96,7 +97,29 @@ export const Task = () => {
             setLoading(true)
         }, 3000)
     }, [])
-    const inputPanjang='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-hitam focus:outline-none focus:ring-0 focus:border-hitam peer'
+    let date = new Date();
+    let tahun = date.getFullYear();
+    let bulan = date.getMonth()
+    let tanggal = date.getDate()
+    useEffect(()=>{
+        
+    },[])
+    switch(bulan) {
+        case 0: bulan = '01'; break;
+        case 1: bulan = '02'; break;
+        case 2: bulan ='03'; break;
+        case 3: bulan = '04'; break;
+        case 4: bulan = '05'; break;
+        case 5: bulan = '06'; break;
+        case 6: bulan = '07'; break;
+        case 7: bulan = '08'; break;
+        case 8: bulan = '09'; break;
+        case 9: bulan = '10'; break;
+        case 10: bulan = "11"; break;
+        case 11: bulan = "12"; break;
+       }
+    const tanggalSekarang=`${tahun}-${bulan}-${tanggal}`
+    const inputPanjang='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-hitam focus:outline-none focus:ring-0 focus:border-hitam peer'
     const labelPanjang='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-hitam peer-focus:dark:text-hitam peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
     return (
         <div className='w-full'>
@@ -111,7 +134,9 @@ export const Task = () => {
             <div className='w-full mt-9 '>
                 <div className='flex items-end justify-between w-full px-5'>
                     <h3 className='font-semibold'>Trending Task</h3>
-                    <p className='text-sm text-gray-600 cursor-pointer'>View all</p>
+                    
+                    <p className='text-sm text-gray-600 cursor-pointer'>
+                        <Link to='/Dashboard.github.io/detail'>View all</Link></p>
                 </div>
                 <div className='flex flex-wrap justify-between w-full mt-5 gap-7 md:gap-5 xl:gap-0'>
                     {loading ?
@@ -194,12 +219,12 @@ export const Task = () => {
                         ...theme,
                         borderRadius: 0,
                         colors: {
-                          ...theme.colors,
+                        
                           primary25: 'hotpink',
                           primary: 'black',
                         },
                       })}
-                      className='text-sm'
+                      className='text-sm text-hitam'
                       styles={colorStyles}
                       ></Select>
                          
@@ -233,6 +258,7 @@ export const Task = () => {
                                 className={inputPanjang}
                                 placeholder=" "
                                 required=""
+                                max={tanggalSekarang}
                                 onChange={(e)=>handleChange(e)}
                             />
                             <label

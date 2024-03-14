@@ -38,7 +38,7 @@ export const NavMobile = () => {
 
           </div>
         </div>
-        <div className='w-full px-8 mt-2 text-white bg-hitam'>
+        <div className='w-full px-8 py-1 mt-2 text-white bg-hitam'>
           <ul className='flex justify-between w-full text-sm text-white '>
             <li className='cursor-pointer '>Home </li>
             <li className='cursor-pointer'>Table</li>
