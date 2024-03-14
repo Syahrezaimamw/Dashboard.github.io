@@ -35,16 +35,16 @@ export const Acara = () => {
                 </div>
                 
                 {/* default */}
-                <div className='flex justify-center w-[310px]  mt-3 md:hidden  md:w-full'>
+                <div className='flex justify-center w-[310px]  mt-3 sm:hidden  md:w-full'>
 
                     <Friend jumlah={3}/>
                 </div>
-              
+                
                
                {/* lg  */}
                 <div className='justify-center hidden w-full mt-3 lg:flex xl:hidden md:w-full'>
 
-                    <Friend jumlah={3}/>
+                    <Friend jumlah={4}/>
                 </div>
    
                </div>

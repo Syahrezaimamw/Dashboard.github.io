@@ -14,9 +14,9 @@ export const NavMobile = () => {
         
         <div className='flex items-center justify-between w-full px-3 pb-1 '>
 
-          <div className='bg-[rgb(245,245,245)] px-4 py-2 w-[80%] md:w-[300px] lg:w-[500px]  flex items-center'>
+          <div className='bg-[rgb(245,245,245)] rounded-xl px-4 py-2 w-[80%] md:w-[300px] lg:w-[500px]  flex items-center'>
             <p className='text-[20px] text-gray-800'><FaMagnifyingGlass /></p>
-            <input type="text" placeholder='Search ' className='placeholder:font-normal placeholder:text-gray-500 border-0 bg-[rgb(245,245,245)]  w-[80%] outline-0 ms-4 h-[30px]' />
+            <input type="text" placeholder='Search ' className='placeholder:font-normal  placeholder:text-gray-500 border-0 bg-[rgb(245,245,245)]  w-[80%] outline-0 ms-4 h-[30px]' />
 
           </div>
           <div className='md:hidden'>
