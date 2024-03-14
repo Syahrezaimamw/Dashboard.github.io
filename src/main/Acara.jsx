@@ -44,7 +44,7 @@ export const Acara = () => {
                {/* lg  */}
                 <div className='justify-center hidden w-full mt-3 lg:flex xl:hidden md:w-full'>
 
-                    <Friend jumlah={4}/>
+                    <Friend jumlah={3}/>
                 </div>
    
                </div>
