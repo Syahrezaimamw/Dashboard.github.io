@@ -116,7 +116,7 @@ export const Task = () => {
         getApii().then((a => setData(a)))
         setTimeout(() => {
             setLoading(true)
-        }, 100)
+        }, 3000)
     }, [])
     let date = new Date();
     let tahun = date.getFullYear();

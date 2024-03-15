@@ -1,13 +1,15 @@
 import React from 'react'
 import { FaAngleRight } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const CardAcara = (props) => {
-    const {title,total,ic,color}=props
+    const {title,total,ic,color,path}=props
     return (
         <div className='flex items-center justify-between w-full px-4 py-3 bg-white rounded-xl' style={{boxShadow:"0px 2px 0px rgba(128, 128, 128,0.5)"}}>
+            <Link to={path} className='flex items-center justify-between w-full'> 
             <div className='flex items-center'>
 
-            <div className={`size-[45px] rounded-lg  flex justify-center items-center  text-xl ${total=="80"?'bg-[#FFE7CA]':''} ${total=="1.5k"?'bg-[#B9BFF8]':''} ${total=="100"?'bg-[rgb(230,230,230)]':''}`}>
+            <div className={`size-[45px] rounded-lg  flex justify-center items-center  text-xl `}style={{backgroundColor:color}}>
                 {ic}
                 
             </div>
@@ -17,6 +19,7 @@ const CardAcara = (props) => {
                 </div>
             </div>
                 <p><FaAngleRight/></p>
+            </Link>
         </div>
     )
 }

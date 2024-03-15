@@ -1,9 +1,5 @@
 import React, { useEffect } from 'react'
-import clap from "../images/clap.png";
-import clapB from "../images/clap-hands.png";
 import { Modal } from './Modal';
-import axios from 'axios';
-
 import { FaHandsClapping } from "react-icons/fa6";
 export const Card = (props) => {
 
@@ -52,7 +48,7 @@ export const Card = (props) => {
                         
                         }
                     </div>
-                    <p className={`${theme ? 'text-white' : "text-gray-700"} text-md font-medium`}> <Modal id={id} path={path}/></p>
+                    <p className={`${theme ? 'text-white' : "text-gray-700"} text-md font-medium`}> <Modal id={id} path={'/Dashboard.github.io/detail'}/></p>
                 </div>
 
             </div>

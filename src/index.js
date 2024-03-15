@@ -6,6 +6,7 @@ import { Contex } from './contex/Ctx';
 import App from './App';
 import { DetailProject } from './DetailProject';
 import 'react-loading-skeleton/dist/skeleton.css'
+import NotesPath from './NotesPath';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/Dashboard.github.io/detail",
     element:<DetailProject/>,
+  },
+  {
+    path: "/Dashboard.github.io/notes",
+    element:<NotesPath/>,
   },
 ]);
 // import reportWebVitals from './reportWebVitals';
