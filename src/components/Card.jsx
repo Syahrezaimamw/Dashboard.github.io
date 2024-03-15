@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import clap from "../images/clap.png";
 import clapB from "../images/clap-hands.png";
-import js from '../images/js.png'
+import { Modal } from './Modal';
+import axios from 'axios';
+
+import { FaHandsClapping } from "react-icons/fa6";
 export const Card = (props) => {
-    const { theme, title, language, description, link } = props
+
+    const { theme, title, language, description, link,id ,path} = props
+    // console.log(id)
     return (
         <div className={`${theme ? 'bg-hitam' : 'bg-abuu'} p-5 w-full  rounded-3xl`}>
 
@@ -11,6 +16,7 @@ export const Card = (props) => {
                 <a href={link} target='_blank'>
 
                     {title}
+                
                 </a>
             </h1>
             <p className={`text-[13px] ${theme ? 'text-white' : 'text-gray-500'} py-3`}>
@@ -18,6 +24,7 @@ export const Card = (props) => {
 
                     {description.substring(0, 75)}...
                 </a>
+
 
             </p>
 
@@ -36,20 +43,20 @@ export const Card = (props) => {
                         )
                     )
                     }
-                    {/* <div className={`border-2 border-white size-6 absolute bg-black rounded-full left-4`}></div>
-        <div className={`border-2 border-white size-6 absolute bg-black rounded-full left-8`}></div> */}
                 </div>
                 <div className='flex items-center gap-3'>
-                    <div className='w-6 ' style={{ transform: 'rotateY(180deg)' }}>
+                    <div className='w-6 text-xl' style={{}}>
                         {theme ?
-                            <img src={clapB} className='' alt="" /> :
-                            <img src={clap} className='' alt="" />
+                           <FaHandsClapping className='text-white'/>:
+                            <FaHandsClapping className='text-gray-700'/>
+                        
                         }
                     </div>
-                    <p className={`${theme ? 'text-white' : "text-black"} text-md font-medium`}>1.2K</p>
+                    <p className={`${theme ? 'text-white' : "text-gray-700"} text-md font-medium`}> <Modal id={id} path={path}/></p>
                 </div>
 
             </div>
+            
 
         </div>
     )

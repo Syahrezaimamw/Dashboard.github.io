@@ -19,7 +19,7 @@ export const DetailProject = () => {
        { data.map((a, i) => (
                                     <div className='w-full sm:w-[47%] md:w-[30%] lg:w-[20%] xl:w-[18%] 'key={i}>
 
-                                    <Card theme={i % 2 == 1} title={a.title} link={a.link} description={a.description} language={a.language} key={i} />
+                                    <Card theme={i % 2 == 1} title={a.title} link={a.link} description={a.description} language={a.language} key={i} id={a.id}  path="/Dashboard.github.io/detail"/>
                                      </div>
        )
        )
