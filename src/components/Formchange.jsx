@@ -49,9 +49,7 @@ const Formchange = () => {
   
   <div className='flex items-end justify-between w-full '>
     <p className='text-sm font-medium text-gray-800 0 lg:block'>Change Note </p>
-
-    <Button
-    >
+    <Button>
       Edit 
     </Button>
         </div>
