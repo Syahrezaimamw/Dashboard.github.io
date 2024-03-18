@@ -3,7 +3,6 @@ import SidebarNotes from './componentNotes/SidebarNotes'
 import MainNotes from './componentNotes/MainNotes'
 const NotesPath = () => {
     const [notes,setNotes]=useState(localStorage.notes?JSON.parse(localStorage.notes):[])
-    // localStorage.setItem('notes',JSON.stringify([]))
     const [active,setActived]=useState()
     // localStorage.removeItem('notes')
     function addNotes(){

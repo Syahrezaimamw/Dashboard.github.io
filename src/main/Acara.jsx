@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CardAcara from '../components/CardAcara'
 import { FaRegBookmark } from "react-icons/fa6";
 import { FaRegHand } from "react-icons/fa6";
@@ -7,11 +7,11 @@ import { Notes } from '../components/Notes';
 import Formchange from '../components/Formchange';
 import { Friend } from '../components/Friend';
 export const Acara = () => {
-    
+    const [jumlahNotes,setJumlahNotes]=useState(localStorage.notes?Math.round(JSON.parse(localStorage.getItem('notes').length/75)):[])
     return (
         <div className='w-full py-2 pb-7 md:pb-5 bg-abuu rounded-3xl'>
             <div className='flex flex-col items-center w-full gap-5 p-5 rounded-2xl' >
-                <CardAcara title='Articles posted' path="/Dashboard.github.io/notes" total="3"  ic={<FaRegBookmark />} color='#FFE7CA' />
+                <CardAcara title='Articles posted' path="/Dashboard.github.io/notes" total={jumlahNotes}  ic={<FaRegBookmark />} color='#FFE7CA' />
                 <CardAcara title='Claps This Week' total="1.5k" ic={<FaRegHand />} color='#B9BFF8' />
                 <CardAcara title='New Followers This Week' total="100" ic={<FaRegUser />} color='rgb(230,230,230)' />
             </div>
