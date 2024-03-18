@@ -9,7 +9,7 @@ const SidebarNotes = ({ notes, addNotes,onDeletedNotes,active,setActived }) => {
                 <button className='px-3 py-1 font-medium text-white border-2 rounded-lg color-hitam bg-hitam' onClick={addNotes}>Add</button>
             </div>
             {
-                notes.map((a) => (
+                sorted.map((a) => (
 
                     <div className='w-full mt-5 ' key={a.id} >
                         <div className={`w-full px-3 py-2 transition-all duration-100 cursor-pointer    group pe-4 ${active==a.id? 'bg-abuu ':'hover:bg-abuu'}  `} onClick={()=>setActived(a.id)}>

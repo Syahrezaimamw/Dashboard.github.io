@@ -37,7 +37,7 @@ const MainNotes = ({ activeNoted, onUpdateNote }) => {
                         />
                     </div>
                 </div>
-                <div className='w-full bg-abuu h-[45vh] md:h-[243px] py-4 mt-2 px-4'>
+                <div className='w-full bg-abuu min-h-[45vh] md:h-[243px] py-4 mt-2 px-4'>
                     <h1 className='text-2xl font-semibold uppercase'>{activeNoted ? activeNoted.title : 'Tit'}</h1>
                     <ReactMarkdown className={' mt-1 text-sm'}>
 

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import SidebarNotes from './componentNotes/SidebarNotes'
 import MainNotes from './componentNotes/MainNotes'
 const NotesPath = () => {
-    localStorage.setItem('notes',JSON.stringify([]))
-    const [notes,setNotes]=useState(JSON.parse(localStorage.notes)||[])
+    const [notes,setNotes]=useState(localStorage.notes?JSON.parse(localStorage.notes):[])
+    // localStorage.setItem('notes',JSON.stringify([]))
     const [active,setActived]=useState()
     // localStorage.removeItem('notes')
     function addNotes(){
@@ -15,10 +15,6 @@ const NotesPath = () => {
         }])
         
     }
-    // useEffect(()=>{
-        // setNotes(notes.length>0?JSON.parse(localStorage.notes):[])
-    // },[notes])
-    // console.log(notes)
     // localStorage.setItem("notes",JSON.stringify(notes))
     function onDeletedNotes(id){
         setNotes(notes.filter((a)=>a.id!==id))
@@ -32,6 +28,7 @@ const NotesPath = () => {
         activeNoted()
         
     },[active])
+    console.log(notelive)
     const onUpdateNote=(onUpdateValue)=>{
       const dataUpdate=  notes.map((a)=>{
             if(a.id===active){
