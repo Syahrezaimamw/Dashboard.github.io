@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Dashboard.github.io/static/css/main.e081d7a5.css",
-    "main.js": "/Dashboard.github.io/static/js/main.0be6ef2d.js",
+    "main.css": "/Dashboard.github.io/static/css/main.190a1271.css",
+    "main.js": "/Dashboard.github.io/static/js/main.eb3036b8.js",
     "index.html": "/Dashboard.github.io/index.html",
-    "main.e081d7a5.css.map": "/Dashboard.github.io/static/css/main.e081d7a5.css.map",
-    "main.0be6ef2d.js.map": "/Dashboard.github.io/static/js/main.0be6ef2d.js.map"
+    "main.190a1271.css.map": "/Dashboard.github.io/static/css/main.190a1271.css.map",
+    "main.eb3036b8.js.map": "/Dashboard.github.io/static/js/main.eb3036b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.e081d7a5.css",
-    "static/js/main.0be6ef2d.js"
+    "static/css/main.190a1271.css",
+    "static/js/main.eb3036b8.js"
   ]
 }
