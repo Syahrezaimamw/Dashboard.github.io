@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import logo from '../images/logo.png'
 import { FaHouse } from "react-icons/fa6";
 import { FaRegCalendar } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 import { FaBoxArchive } from "react-icons/fa6";
 import { FaTableCellsLarge } from "react-icons/fa6";
 import { FaRegSun } from "react-icons/fa6";
@@ -30,7 +31,7 @@ const Navbar = () => {
     }
     return (
         <>
-            <div className='hidden sm:flex md:w-[95px]   bg-hitam  flex-col px-4 items-center justify-between rounded-r-2xl md:rounded-r-3xl py-4  xl:ps-0 pb-8 md:pt-8'>
+            <div className='hidden sm:flex md:w-[95px]  min-h-screen  bg-hitam  flex-col px-4 items-center justify-between rounded-r-2xl md:rounded-r-3xl py-4  xl:ps-0 pb-8 md:pt-8'>
                 <div className='flex flex-col items-center w-full'>
 
 
@@ -96,7 +97,9 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <h1 className='text-xl text-white rotate-180'><FaArrowRightFromBracket /></h1>
+                <h1 className='text-xl text-white rotate-180'> <Link to='/Dashboard.github.io/'>
+                <FaArrowRightFromBracket />
+                </Link> </h1>
 
             </div>
 
